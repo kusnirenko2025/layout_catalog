@@ -1,0 +1,252 @@
+.product-card {
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  flex-direction: column;
+  width: 200px;
+  height: 100%;
+  padding: 32px 16px 16px;
+  transition: transform .3s;
+  display: flex;
+}
+
+.product-card__description {
+  color: #060b35;
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.product-card:hover {
+  z-index: 1;
+  transform: scale(1.2);
+}
+
+.product-card:hover .product-card__description {
+  color: #34568b;
+}
+
+.product-card .imac {
+  height: 134px;
+  margin: 0 3px 40px;
+  display: block;
+}
+
+.product-card__code {
+  color: #616070;
+  margin-bottom: 16px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.product-card__ratings {
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.product-card__review {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.product-card__prices {
+  justify-content: space-between;
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.product-card__price {
+  color: #616070;
+  justify-content: space-between;
+  margin-right: 85px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  display: flex;
+}
+
+.product-card__dollar-price {
+  color: #060b35;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.product-card .button {
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #00acdc;
+  border: 1px solid #00acdc;
+  border-radius: 5px;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  width: 166px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  transition: background-color .3s, color .3s;
+  display: flex;
+}
+
+.product-card .button:hover {
+  color: #00acdc;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: #f3f3f3;
+  border: 1px solid #00acdc;
+  line-height: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.main {
+  grid-template-columns: repeat(1, 200px);
+  justify-content: center;
+  align-items: stretch;
+  gap: 46px 48px;
+  padding: 50px 40px;
+  display: grid;
+}
+
+@media (width >= 488px) {
+  .main {
+    grid-template-columns: repeat(2, 200px);
+  }
+}
+
+@media (width >= 768px) {
+  .main {
+    grid-template-columns: repeat(3, 200px);
+  }
+}
+
+@media (width >= 1024px) {
+  .main {
+    grid-template-columns: repeat(4, 200px);
+  }
+}
+
+.stars {
+  display: flex;
+}
+
+.stars__star {
+  background-image: url("star.fa806e3c.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.stars__star:last-child {
+  margin-right: 0;
+}
+
+.stars__star:nth-child(-n+4) {
+  background-image: url("star-active.2be54011.svg");
+}
+
+:root {
+  --blue-color: #00acdc;
+}
+
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+}
+
+body {
+  background-color: #fff;
+  margin: 0;
+}
+
+.header {
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  line-height: 60px;
+  display: flex;
+  box-shadow: 0 2px 4px #0000000d;
+}
+
+.nav {
+  text-align: center;
+}
+
+.logo {
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.nav__item {
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+.nav__link {
+  color: #060b35;
+  text-transform: uppercase;
+  align-items: center;
+  line-height: 60px;
+  text-decoration: none;
+  transition: color .3s;
+  display: inline-block;
+  position: relative;
+}
+
+.nav__link:hover {
+  color: var(--blue-color);
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.is-active {
+  color: var(--blue-color);
+  position: relative;
+}
+
+.is-active:after {
+  content: " ";
+  background: var(--blue-color);
+  color: var(--blue-color);
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+body, div, p, h2, a {
+  margin: 0;
+}
+/*# sourceMappingURL=index.e378193d.css.map */
